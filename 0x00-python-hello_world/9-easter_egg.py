@@ -1,2 +1,4 @@
 #!/usr/bim/python3
-print("The Zen of Python, by Tim Peters")
+with open('zen.txt', 'r') as file:
+    zen = file.read()
+    print(zen[: -1])
