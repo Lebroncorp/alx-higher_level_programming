@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
 def uniq_add(my_list=[]):
-    add = 0
-    for x in set(my_list):
-        add += x
-    return add
+    adds = 0
+    for i in set(my_list):
+        adds += i
+    return adds
