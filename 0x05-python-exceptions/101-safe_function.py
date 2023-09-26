@@ -2,6 +2,7 @@
 
 import sys
 
+
 def safe_function(fct, *args):
     resolve = None
     try:
@@ -11,4 +12,4 @@ def safe_function(fct, *args):
         errors = errors.args[0]
         sys.stderr.write("Exception: " + errors + "\n")
 
-    return (resolve) 
+    return (resolve)
