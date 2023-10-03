@@ -11,7 +11,7 @@ class Rectangle:
         self.width = width
         self.height = height
 
-    def dele(self):
+    def __del(self):
         """prints a string when an instance has been deleted"""
         print("Bye rectangle...")
 
@@ -51,13 +51,13 @@ class Rectangle:
             return 0
         return (self.__width * 2) + (self.__height * 2)
 
-    def stri(self):
+    def __str(self):
         string = ""
         if self.__width != 0 and self.__height != 0:
             string += "\n".join("#" * self.__width
                                 for j in range(self.__height))
         return string
 
-    def reprs(self):
+    def __repr(self):
         """returns string representation of the rectangle for reproduction"""
         return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
