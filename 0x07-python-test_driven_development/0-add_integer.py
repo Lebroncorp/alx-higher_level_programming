@@ -1,27 +1,16 @@
 #!/usr/bin/python3
+""" Calculates the sum of two numbers
 """
-0-add_integer module supplies one function, add_integer(a, b).
-"""
 
 
-def add_integer(a, b):
-    """Return the addition of two numbers."""
+def add_integer(a, b=98):
+    """checks if  a and b are of type int or float and
+    returns the sum of a and b if true,else raises TypeError"""
 
-    if type(a) is not int and type(a) is not float:
+    if type(a) not in [int, float] or type(a) is None:
         raise TypeError("a must be an integer")
 
-    if type(b) is not int and type(b) is not float:
+    if type(b) not in [int, float]:
         raise TypeError("b must be an integer")
 
-    if type(b) == ():
-        b = 0
-    if type(a) == ():
-        a = 0
-
-    if type(b) is float:
-        b = int(b)
-
-    if type(a) is float:
-        a = int(a)
-
-    return (a + b)
+    return int(a) + int(b)
