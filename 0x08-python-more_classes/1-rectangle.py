@@ -10,6 +10,7 @@ class Rectangle:
         """Initializes the rectangle"""
         self.height = height
         self.width = width
+
     @property
     def width(self):
         return self.__width
