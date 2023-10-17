@@ -9,19 +9,26 @@ from models.base import Base
 
 class TestBase(unittest.Testcase):
     """Instantiation of all test cases of Base class"""
+
     def test_init(self):
+        """test cases for attributes"""
         b1 = Base()
         self.assertEqual(b1.id, 1)
 
-        b2 = Base(10)
-        self.assertEqual(b2.id, 10)
+        b2 = Base()
+        self.assertEqual(b2.id, 2)
+
+        b3 = Base(10)
+        self.assertEqual(b3.id, 10)
 
     def test_None_id(self):
+        """test for none id"""
         b1 = Base(None)
         b2 = Base(None)
         self.assertEqual(b1.id, b2.id - 1)
 
     def test_unique_id(self):
+        """test for unique id"""
         self.assertEqual(13, Base(13).id)
 
 

@@ -6,6 +6,8 @@ from models.base import Base
 
 
 class Rectangle(Base):
+    """Represents the standard for the Rectangle"""
+
     def __init__(self, width, height, x=0, y=0, id=None):
         """
             initializes a new rectangle class
