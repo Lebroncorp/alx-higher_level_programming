@@ -6,6 +6,7 @@
 import unittest
 from models.base import Base
 
+
 class TestBase(unittest.Testcase):
     """Instantiation of all test cases of Base class"""
     def test_init(self):
@@ -23,5 +24,5 @@ class TestBase(unittest.Testcase):
     def test_unique_id(self):
         self.assertEqual(13, Base(13).id)
 
-if __name__ == "__main__":
-    unittest.main()
+    if __name__ == "__main__":
+        unittest.main()

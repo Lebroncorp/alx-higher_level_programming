@@ -9,7 +9,7 @@ from models.rectangle import Rectangle
 
 class TestRectangle(unittest.TestCase):
     """Test cases ofor class rectangle"""
-     def test_init_no_args(self):
+    def test_init_no_args(self):
         with self.assertRaises(TypeError):
             Rectangle()
 
@@ -27,7 +27,7 @@ class TestRectangle(unittest.TestCase):
         r2 = Rectangle(4, 4, 2)
         self.assertEqual(r1.id, r2.id - 1)
 
-     def test_four_args(self):
+    def test_four_args(self):
         r1 = Rectangle(1, 2, 3, 4)
         r2 = Rectangle(4, 3, 2, 1)
         self.assertEqual(r1.id, r2.id - 1)
