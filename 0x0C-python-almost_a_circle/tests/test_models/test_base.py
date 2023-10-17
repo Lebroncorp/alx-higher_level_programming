@@ -24,5 +24,6 @@ class TestBase(unittest.Testcase):
     def test_unique_id(self):
         self.assertEqual(13, Base(13).id)
 
-    if __name__ == "__main__":
-        unittest.main()
+
+if __name__ == "__main__":
+    unittest.main()

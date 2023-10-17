@@ -41,3 +41,7 @@ class TestSquare(unittest.TestCase):
     def test_more_than_four_args(self):
         with self.assertRaises(TypeError):
             Square(1, 2, 3, 4, 5)
+
+
+if __name__ == "__main__":
+    unittest.main()
