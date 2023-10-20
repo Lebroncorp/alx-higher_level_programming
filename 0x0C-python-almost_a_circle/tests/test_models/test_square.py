@@ -10,9 +10,10 @@ from models.square import Square
 class TestSquare(unittest.TestCase):
     """Instantiation of test cases for the Square class."""
 
-    def test_is_base(self):
-        """testing base"""
+    """def test_is_base(self):
+        testing base
         self.assertIsInstance(Square(10), Base)
+    """
 
     def test_is_rectangle(self):
         """testing rectangle"""

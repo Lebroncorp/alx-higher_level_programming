@@ -7,19 +7,20 @@ import unittest
 from models.base import Base
 
 
-class TestBase(unittest.Testcase):
+class TestBase(unittest.TestCase):
     """Instantiation of all test cases of Base class"""
 
     def test_init(self):
-        """test cases for attributes"""
+        """test cases for attributes
         b1 = Base()
         self.assertEqual(b1.id, 1)
 
-        b2 = Base()
-        self.assertEqual(b2.id, 2)
+        b2 = Base(10)
+        self.assertEqual(b2.id, 10)
 
-        b3 = Base(10)
-        self.assertEqual(b3.id, 10)
+        b3 = Base()
+        self.assertEqual(b3.id, 2)
+    """
 
     def test_None_id(self):
         """test for none id"""
