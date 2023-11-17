@@ -2,11 +2,11 @@
 -- Records displays: tv_shows.title in ascending order
 SELECT DISTINCT `title`
 FROM `tv_shows` AS t
-LEFT JOIN `tv_show_genres` AS s
-ON s.`show_id` = t.`id`
+LEFT JOIN `tv_show_genres` AS sg
+ON sg.`show_id` = t.`id`
 
 LEFT JOIN `tv_genres` AS g
-ON g.`id` = s.`genre_id`
+ON g.`id` = sg.`genre_id`
 WHERE t.`title` NOT IN
 (SELECT `title`
 	FROM `tv_shows` AS t
