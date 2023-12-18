@@ -2,7 +2,7 @@
 
 """
 Lists all states with a name starting with N from the database hbtn_0e_0_usa:
-script should take 3 arguments: mysql username, mysql password and database name.
+script should take 3 arguments: mysql username, mysql password & database name.
 List must be sorted in ascending order by states.id
 """
 
