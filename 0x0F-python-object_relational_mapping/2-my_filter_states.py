@@ -3,7 +3,7 @@
 """
 Displays all values in the states table of the database
 hbtn_0e_0_usa, where name matches the argument.
-script should take 3 arguments: mysql username, mysql
+script should take 4 arguments: mysql username, mysql
 password, database name and state name searched.
 List must be sorted in ascending order by states.id
 """
