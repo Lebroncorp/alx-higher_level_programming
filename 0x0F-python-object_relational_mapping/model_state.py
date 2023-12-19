@@ -1,4 +1,4 @@
-#!/usr/bin/pyhton3
+#!/usr/bin/python3
 
 """
 Defines a State model.
@@ -14,10 +14,11 @@ class State(Base):
     """
     Represents a state.
     __tablename__ (str): The name of the MySQL table to store the States.
-    id: The state's id.
-    name: The state's name.
+    "id" is the state's id.
+    "name" is the state's name.
     """
 
     __tablename__ = "states"
+
     id = Column(Integer, primary_key=True)
     name = Column(String(128), nullable=False)
