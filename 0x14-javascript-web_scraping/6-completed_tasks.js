@@ -1,15 +1,15 @@
 #!/usr/bin/node
-//computes the number of tasks completed by user id.
+
 const request = require('request');
 
 if (process.argv.length !== 3) {
   console.error('Usage: ./0-readme.js <url>');
   process.exit(1);
 }
+
 const url = process.argv[2];
 
-
-// display request's status code
+// display status code of request
 request.get(`${url}`, (err, res, body) => {
   if (err) {
     console.log(err);
@@ -17,7 +17,6 @@ request.get(`${url}`, (err, res, body) => {
   }
   const completed = {};
   const data = JSON.parse(body);
-
   data.forEach((task) => {
     if (task.completed) {
       if (!completed[task.userId]) {
