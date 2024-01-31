@@ -3,7 +3,7 @@
 const fs = require('fs');
 
 if (process.argv.length !== 4) {
-  console.error('Usage: ./0-readme.js <file-path> <content>');
+  console.error('Usage: ./0-readme.js <file-path> <new_str>');
   process.exit(1);
 }
 const filePath = process.argv[2];
