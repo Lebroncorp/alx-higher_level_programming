@@ -3,7 +3,6 @@
 const request = require('request');
 const url = process.argv[2];
 
-// display status code of request
 request(url, function (err, response, body) {
   if (err) {
     console.log(err);

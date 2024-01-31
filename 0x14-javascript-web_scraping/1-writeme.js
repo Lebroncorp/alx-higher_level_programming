@@ -7,9 +7,9 @@ if (process.argv.length !== 4) {
   process.exit(1);
 }
 const filePath = process.argv[2];
-const content = process.argv[3];
+const new_str = process.argv[3];
 
-fs.writeFile(filePath, content, err => {
+fs.writeFile(filePath, new_str, err => {
   if (err) {
     console.error(err);
   }
